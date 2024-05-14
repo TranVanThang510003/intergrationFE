@@ -6,11 +6,11 @@ import { faBell, faChartSimple, faDollarSign, faGauge, faUserGroup, faUserSecret
 const SideBar = () => {
 
   return (
-    <div className=' flex flex-col w-52 h-screen  ' style={{ background: '#404E67' }}>
+    <div className=' flex flex-col w-52 h-screen  ' style={{ background: '#2f3056' }}>
     
       {/* images of the app */}
       <NavLink to='/' className='h-auto w-full mb-1'>
-        <img className='w-full h-auto' alt='logo of Quick Memo CEO page' src={require('../../asset/imgs/LogoQMC.jpeg')} ></img>
+           <div className=' h-28 text-7xl flex justify-center items-center text-white font-bold' style={{background:"#1165C7"}}>HR</div>
       </NavLink>
 
       {/*List of link pages*/}
@@ -29,7 +29,7 @@ const SideBar = () => {
       <NavLink to='/statistical' className='menuItem' activeClassName='active'>
         <FontAwesomeIcon className='w-9' icon={faChartSimple}></FontAwesomeIcon> Statistical</NavLink>
 
-      <NavLink to='/manage' className='menuItem' activeClassName='active'>
+      <NavLink to='/management' className='menuItem' activeClassName='active'>
         <FontAwesomeIcon className='w-9' icon={faUserSecret}></FontAwesomeIcon> Managerment</NavLink>
     </div>
   )
